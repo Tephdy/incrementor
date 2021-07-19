@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: rgb(255, 138, 5);
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: var(--backgroundColor);
+    position: relative;
+}
+
+header>.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+header>.header-container h1 {
+    text-transform: uppercase;
+}
+
+header>.header-container h1 span {
+    text-transform: lowercase;
+}
+
+header>.header-container small {
+    color: rgb(14, 14, 14);
+    ;
+    font-style: italic;
+}
+
+main {
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.container>.output {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container>.output>#output {
+    color: var(--backgroundColor);
+}
+
+.container>.output span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container>.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.remaining>small {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    color: var(--backgroundColor);
+}
+
+.container>.remaining {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.container>.remaining>#remItems {
+    color: #fff !important;
+    margin-left: 4px;
+}
+
+.container>.button-container>button {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--backgroundColor);
+    border: hidden;
+    outline: none;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container>.button-container>button:hover {
+    background-color: rgb(255, 165, 46);
+    color: black;
+}
